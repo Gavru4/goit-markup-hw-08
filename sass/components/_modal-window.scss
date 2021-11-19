@@ -1,0 +1,50 @@
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal-form {
+  position: absolute;
+  top: 221px;
+
+  width: 528px;
+  height: 581px;
+
+  background: var(--hero-adress-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-close-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
