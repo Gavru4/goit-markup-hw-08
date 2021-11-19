@@ -1,48 +1,109 @@
-.benefits-list {
-  display: flex;
-}
 .benefits-section {
-  padding-top: 94px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   color: var(--secondary-bgc);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 .benefits-list__header {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
+  font-size: 12px;
+  line-height: 0.8;
   letter-spacing: 0.03em;
+  text-align: center;
 
   margin-bottom: 10px;
   text-transform: uppercase;
 
   color: var(--headers-link-color);
-}
-.benefits-list__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: start;
   }
 }
 
-.benefits-list__wraper {
-  width: 270px;
-  height: 120px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
+.benefits-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.benefits-list__item {
   margin-bottom: 30px;
 
-  background: #f5f4fa;
-}
-.benefits-list__text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    width: 350px;
+
+    margin-right: 30px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      &:nth-child(even) {
+        margin-right: 30px;
+      }
+      margin-bottom: 0;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .benefits-list__wraper {
+    width: 297px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    background: #f5f4fa;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 350px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  .benefits-list__text {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+
+    color: var(--main-text-color);
+
+    @media screen and (min-width: 480px) {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  }
 }
