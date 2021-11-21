@@ -1,18 +1,41 @@
 .mailing {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .mailing__title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   color: #ffffff;
+  @media screen and (min-width: 480px) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+}
+.mailing__wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 .mailing__input {
   font-size: 16px;
@@ -20,14 +43,29 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
-  width: 358px;
-  height: 50px;
+  width: 290px;
+  height: 40px;
   padding: 15px;
-  margin-right: 12px;
+  margin-bottom: 15px;
+  // width: 358px;
+  // margin-right: 12px;
+  // height: 50px;
 
   background-color: var(--footer-bgc);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 .mailing__btn {
   position: relative;

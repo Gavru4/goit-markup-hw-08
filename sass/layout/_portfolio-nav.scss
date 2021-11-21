@@ -1,11 +1,50 @@
 .portfolio-nav {
   display: flex;
-  justify-content: center;
-
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // margin-bottom: 50px;
+  // @media screen and (min-width: 480px) {
+  //   flex-wrap: wrap;
+  // }
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 .portfolio-nav__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 480px) {
+    &:nth-child(even) {
+      margin-right: 8px;
+    }
+    &:last-child {
+      margin-bottom: unset;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(even) {
+      margin-right: 8px;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 8px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: unset;
+    }
+  }
 }
 .portfolio-nav__btn {
   font-weight: 500;

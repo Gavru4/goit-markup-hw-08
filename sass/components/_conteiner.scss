@@ -9,13 +9,13 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (min-with: 480px) {
-    width: 450px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  @media screen and (min-with: 768px) {
-    width: 738px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
-  @media screen and (min-with: 1200px) {
-    width: 1170px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
