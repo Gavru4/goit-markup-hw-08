@@ -49,6 +49,7 @@ ul {
 }
 
 img {
+  width: 100%;
   display: block;
   height: auto;
 }
@@ -616,7 +617,7 @@ body {
   }
 }
 
-.logo {
+.header-logo__link {
   font-family: var(--logo-font-family);
   font-style: 700;
   font-size: 26px;
@@ -628,21 +629,21 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .logo {
+  .header-logo__link {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .logo {
+  .header-logo__link {
     padding-top: 26px;
     padding-bottom: 26px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .logo {
+  .header-logo__link {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 94px;
@@ -650,7 +651,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .menu-btn__wraper {
+  .header-logo__wraper {
     display: flex;
     justify-content: space-between;
   }
@@ -676,11 +677,19 @@ body {
 }
 
 .mobile-menu {
-  position: relative;
-  width: 480px;
-  height: 796px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 320px;
   background-color: #fff;
-  padding: 48px 40px;
+  padding: 38px 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    width: 480px;
+    padding: 48px 40px;
+  }
 }
 
 .mobile-menu__close {
@@ -775,6 +784,10 @@ body {
   }
 }
 
+.nav__list {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .nav__list {
     display: flex;
@@ -808,6 +821,10 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+.contact-list {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1255,10 +1272,6 @@ body {
   .team-list__item:last-child {
     margin-right: 0;
   }
-}
-
-.team-list__img {
-  display: inline-block;
 }
 
 .team-card__members {
