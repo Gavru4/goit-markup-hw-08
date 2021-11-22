@@ -1,8 +1,12 @@
 .our-direction {
+  display: none;
   padding-top: 47px;
   padding-bottom: 94px;
 
   color: var(--secondary-bgc);
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .direction-list {
   display: flex;

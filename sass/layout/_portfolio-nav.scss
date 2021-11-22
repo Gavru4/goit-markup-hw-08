@@ -1,11 +1,15 @@
 .portfolio-nav {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 30px;
   // justify-content: center;
   // margin-bottom: 50px;
   // @media screen and (min-width: 480px) {
   //   flex-wrap: wrap;
   // }
+  @media screen and (min-width: 480px) {
+    margin-bottom: 40px;
+  }
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     justify-content: center;
@@ -35,6 +39,7 @@
     }
   }
   @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
     &:nth-child(even) {
       margin-right: 8px;
     }
@@ -43,6 +48,12 @@
     }
     &:nth-last-child(-n + 2) {
       margin-bottom: unset;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 30px;
     }
   }
 }
