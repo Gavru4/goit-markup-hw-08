@@ -1,7 +1,7 @@
 /* ---------------------------------------------- Header*/
-.header-flex {
-  display: flex;
-}
+// .header-flex {
+//   display: flex;
+// }
 .logo {
   font-family: var(--logo-font-family);
   font-style: 700;
@@ -9,11 +9,32 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  margin-right: 94px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  // margin-right: 94px;
+  // padding-top: 25px;
+  // padding-bottom: 25px;
 
   color: #000000;
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 7668px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+.menu-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  margin: right auto;
+  border: none;
+  background-color: #fff;
 }
 /*---------------------------------------------- Header nav */
 
