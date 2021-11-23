@@ -15,8 +15,7 @@
   }
   @media screen and (min-width: 1200px) {
     display: block;
-    // flex-direction: unset;
-    // align-items: unset;
+    margin-bottom: 0;
   }
 }
 .address__text {
@@ -31,7 +30,7 @@
 
   @media screen and (min-width: 480px) {
     font-size: 14px;
-    line-height: 1.7px;
+    line-height: 1.7;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
@@ -52,8 +51,12 @@
 }
 .address__item {
   margin-bottom: 8px;
+
   &:last-child {
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
   }
 }
 .address__link {

@@ -14,11 +14,6 @@
 
   padding-top: 14px;
   padding-bottom: 14px;
-
-  // margin-right: 94px;
-  // padding-top: 25px;
-  // padding-bottom: 25px;
-
   color: #000000;
   @media screen and (min-width: 480px) {
     padding-top: 16px;
@@ -35,41 +30,34 @@
   }
 }
 .header-logo__wraper {
-  @media screen and (max-width: 480px) {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
 }
 
 .menu-btn {
-  margin: right auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   border: none;
   background-color: #fff;
   @media screen and (min-width: 768px) {
-    position: absolute;
-    // is-hidden
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+    display: none;
   }
 }
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   z-index: 99;
-  position: absolute;
-  // position: fixed;
+  position: fixed;
   top: 0;
   right: 0;
-  width: 320px;
+  height: 100vh;
+  width: 100vw;
 
-  // height: 796px;
   background-color: #fff;
   padding: 38px 30px;
   @media screen and (min-width: 480px) {
-    width: 480px;
     padding: 48px 40px;
   }
 }
@@ -84,9 +72,7 @@
   margin-bottom: 64px;
 }
 .mobile-menu__list {
-  margin-bottom: 250px;
   @media screen and (min-width: 480px) {
-    margin-bottom: 302px;
   }
 }
 .mobile-menu__item {
